@@ -1,0 +1,3 @@
+- docker-compose up
+- psql -h localhost -U taesup
+- \i db_init.sql
