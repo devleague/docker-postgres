@@ -1,3 +1,3 @@
 - `docker-compose up`
-- Connect to DB using postbird: 'https://github.com/paxa/postbird
+- Connect to DB using postbird: https://github.com/paxa/postbird
 - import db_init.sql file in postbird
