@@ -1,3 +1,3 @@
-- docker-compose up
-- psql -h localhost -U taesup
-- \i db_init.sql
+- `docker-compose up`
+- Connect to DB using postbird: 'https://github.com/paxa/postbird
+- import db_init.sql file in postbird
