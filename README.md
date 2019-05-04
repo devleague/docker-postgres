@@ -1,6 +1,38 @@
-### Start the database
+### Create a .env File
 
-**Ensure that your .env is setup correct**
+Create a .env file by copying the contents of the .env.example file into the .env file.
+
+This file should contain the following:
+
+```
+DOCKERHUB_NAME=username
+IMAGE_NAME=docker-postgres
+IMAGE_VERSION=0.0.1
+
+POSTGRES_HOST_PORT=5432
+POSTGRES_CONTAINER_PORT=5432
+POSTGRES_USER=username
+POSTGRES_PASSWORD=password
+POSTGRES_DB=database_name
+```
+
+DOCKERHUB_NAME is the username used when creating a dockerhub account.  
+IMAGE_NAME is the name of the docker image we will be creating.  
+IMAGE_VERSION is the version of docker image we will be creating.  
+
+POSTGRES_HOST_PORT is the port where this container will attach to on your laptop.  
+POSTGRES_CONTAINER_PORT is the port that the container will leave open outside of the container.  
+POSTGRES_USER is the username of the postgres user this docker image will create during initial startup.  
+POSTGRES_PASSWORD is the password for the postgres user that will be created during initial startup.  
+POSTGRES_DB is the name of the database that will be created on initial startup of the container.  
+
+Please update all key/value pair with your own relevant information except:
+ - IMAGE_VERSION
+ - POSTGRES_HOST_PORT
+ - POSTGRES_CONTAINER_PORT
+
+
+### Start the database
 
 Then run the following command in the same folder as the docker-compose file:  
 `docker-compose up`
